@@ -24,17 +24,20 @@ input.addEventListener("keyup",function(e){
     ul.appendChild(li);
 
     input.value="";
-
+    let timeoutid;
         check.addEventListener("click",function(){
+            
             if(check.checked){
                 li.style.textDecoration="line-through";
-                setTimeout(() => {
+                 timeoutid=setTimeout(() => {
                     ul.removeChild(li);
                 }, 5000);
 
             }
             else if(!check.checked){
                 li.style.textDecoration="none";
+               clearTimeout(timeoutid);
+                
             }
         
         })
