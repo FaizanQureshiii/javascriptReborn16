@@ -17,6 +17,14 @@ input.addEventListener("keyup",function(e){
     const li=document.createElement("li");
     li.className="list-item";
     li.appendChild(document.createTextNode(input.value));
+
+ 
+
+
+    const date = document.createElement("p");
+    date.className="date";
+    date.appendChild(document.createTextNode(new Date().toDateString()));
+    li.appendChild(date);
     const check=document.createElement("input");
     check.type="checkbox";
     check.className="checkbox";
