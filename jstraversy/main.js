@@ -32,35 +32,35 @@ const money=234;
 
 //arrays 
 //old way 
-const number=new Array(1,2,3,4,5,6,7,8,9,10);
-console.log(number);                         
-//new way  
-const fruits =['oranges','mangoes','apple',10,true];
-console.log(fruits[2]);
-fruits.push('kiwi');
-console.log(fruits); 
-fruits.unshift('pineapple');
-console.log(fruits);
-console.log(fruits.indexOf('mangoes'));
-
-const prsonn = {
-        fisrtname:'faizan',
-        lastname:'khan',
-        age:2,
-         address:{
-            street:'street no 9',
-            house:'no4',
-            city:'lahoire'       
-
-    }
-
-
-}
-console.log(prsonn.address.house);
-//to pull some thing from this you can destructure
-
-const { fisrtname,age,address:{city}}=prsonn;
-console.log(fisrtname,city);
+//const number=new Array(1,2,3,4,5,6,7,8,9,10);
+//console.log(number);                         
+////new way  
+//const fruits =['oranges','mangoes','apple',10,true];
+//console.log(fruits[2]);
+//fruits.push('kiwi');
+//console.log(fruits); 
+//fruits.unshift('pineapple');
+//console.log(fruits);
+//console.log(fruits.indexOf('mangoes'));
+//
+//const prsonn = {
+//        fisrtname:'faizan',
+//        lastname:'khan',
+//        age:2,
+//         address:{
+//            street:'street no 9',
+//            house:'no4',
+//            city:'lahoire'       
+//
+//    }
+//
+//
+//}
+//console.log(prsonn.address.house);
+////to pull some thing from this you can destructure
+//
+//const { fisrtname,age,address:{city}}=prsonn;
+//console.log(fisrtname,city);
 
 
 //array of object
@@ -114,25 +114,25 @@ const todo= [
 
 
 ////for.each map filter
-//todo.forEach(function(t){
-//    console.log(t.note);
-//});
+todo.forEach(function(t){
+    console.log(t.note);
+});
 // map
-//const todoss=todo.map(function(t){
-//
-//
-//    return t.note;
-//
-//});
+const todoss=todo.map(function(t){
+
+
+    return t.note;
+
+});
 //console.log(todoss);
 
 
 
 //filter
-//const todocomplete=todo.filter(function(t){
-//    return t.done===true;
-//});
-//console.log(todocomplete);
+const todocomplete=todo.filter(function(t){
+    return t.done===true;
+});
+console.log(todocomplete);
 
 
 

@@ -45,6 +45,8 @@ input.addEventListener("keyup",function(e){
             else if(!check.checked){
                 li.style.textDecoration="none";
                clearTimeout(timeoutid);
+
+               
                 
             }
         
